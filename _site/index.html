@@ -24,6 +24,7 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/widget.css" type="text/css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -93,17 +94,21 @@ document.getElementById(&quot;BAAPHOLDER&quot;).style.display = &quot;block&quot
                 <h2 class="section-heading">Book an appointment now</h2>
                 <hr class="light">
                 <p class="text-faded">View available timeslots and book your appointment now. Instant confirmation</p>
-              
-                <a class="btn btn-default btn-xl" href="javascript:;" onclick="document.getElementById(&quot;BAAP&quot;).src=&quot;https://booking.bappnow.com/widget/embed.html?smilewelldxb&quot;; 
+
+                <a class="btn btn-default btn-xl" href="javascript:;"
+                    onclick="document.getElementById(&quot;BAAP&quot;).src=&quot;https://booking.bappnow.com/widget/embed.html?smilewelldxb&quot;; 
                                             document.getElementById(&quot;BAAPHOLDER&quot;).style.display = &quot;block&quot;;">Book An Appointment</a>
             </div>
         </div>
     </div>
 </section>
-<div id="BAAPHOLDER" style="display: none; position: fixed; right: 0px; top: 0px; height: 100vh; z-index: 9999999; width: 360px; box-shadow: rgba(0, 0, 0, 0.62) 0px 1px 7px 0px;">
-    <a href="javascript:;" style="display: block;width: 44px;height: 43px;position: fixed;right:0;top:0;background: #000000;font-size: 45px;font-weight: 400;line-height: 0.8em;padding-left: 10px;color: #fff;" onclick="document.getElementById(&quot;BAAPHOLDER&quot;).style.display = &quot;none&quot;;">×</a>
-    <iframe id="BAAP" frameborder="0" style="right:0; top:0; height:100vh;  width: 360px" src="https://booking.bappnow.com/widget/embed.html?smilewelldxb"></iframe>
-    </div>
+<div id="BAAPHOLDER" class="bappholder">
+    <a href="javascript:;"
+        style="display: block;width: 44px;height: 43px;position: fixed;right:0;top:0;background: #000000;font-size: 45px;font-weight: 400;line-height: 0.8em;padding-left: 10px;color: #fff;"
+        onclick="document.getElementById(&quot;BAAPHOLDER&quot;).style.display = &quot;none&quot;;">×</a>
+    <iframe id="BAAP" frameborder="0" style="right:0; top:0; height:100vh;  width: 360px"
+        src="https://booking.bappnow.com/widget/embed.html?smilewelldxb"></iframe>
+</div>
   <section id="services">
     <div class="container">
         <div class="row">
