@@ -7,8 +7,8 @@
                 <p class="text-faded">View available timeslots and book your appointment now. Instant confirmation</p>
 
                 <a class="btn btn-default btn-xl" href="javascript:;"
-                    onclick="document.getElementById(&quot;BAAP&quot;).src=&quot;https://booking.bappnow.com/widget/embed.html?smilewelldxb&quot;; 
-                                            document.getElementById(&quot;BAAPHOLDER&quot;).style.display = &quot;block&quot;;">Book An Appointment</a>
+                    onclick="document.getElementById('BAAP').src='https://booking.bappnow.com/widget/embed.html?smilewelldxb' 
+                                            document.getElementById('BAAPHOLDER').style.display = 'block'">Book An Appointment</a>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
 <div id="BAAPHOLDER" class="bappholder">
     <a href="javascript:;"
         style="display: block;width: 44px;height: 43px;position: fixed;right:0;top:0;background: #000000;font-size: 45px;font-weight: 400;line-height: 0.8em;padding-left: 10px;color: #fff;"
-        onclick="document.getElementById(&quot;BAAPHOLDER&quot;).style.display = &quot;none&quot;;">×</a>
-    <iframe id="BAAP" frameborder="0" style="right:0; top:0; height:100vh;  width: 360px"
+        onclick="document.getElementById('BAAPHOLDER').style.display = 'none';">×</a>
+    <iframe id="BAAP" frameborder="0" class="iframe"  
         src="https://booking.bappnow.com/widget/embed.html?smilewelldxb"></iframe>
 </div>
