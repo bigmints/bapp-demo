@@ -1,3 +1,21 @@
+<script type="text/javascript">
+
+ function launchDemo(){
+    if(document.getElementById("BAAP").hasAttribute("src")) {
+        document.getElementById('BAAPHOLDER').style.display = 'block'
+    }else{
+        document.getElementById('BAAP').src = "https://booking.bappnow.com/widget/embed.html?{{page.partnerId}}"
+        document.getElementById('BAAPHOLDER').style.display = 'block'
+
+    }
+ }
+
+
+
+
+</script>
+
+
 <section class="bg-primary" id="about">
     <div class="container">
         <div class="row">
@@ -7,8 +25,7 @@
                 <p class="text-faded">View available timeslots and book your appointment now. Instant confirmation</p>
 
                 <a class="btn btn-default btn-xl" href="javascript:;"
-                    onclick="document.getElementById('BAAP') 
-                                            document.getElementById('BAAPHOLDER').style.display = 'block'">Book An Appointment</a>
+                    onclick="launchDemo()">Book An Appointment</a>
             </div>
         </div>
     </div>
@@ -18,7 +35,7 @@
         style="display: block;width: 44px;height: 43px;position: fixed;right:0;top:0;background: #000000;font-size: 45px;font-weight: 400;line-height: 0.8em;padding-left: 10px;color: #fff;"
         onclick="document.getElementById('BAAPHOLDER').style.display = 'none';">×</a>
     <iframe id="BAAP" frameborder="0" class="iframe" style="background-color: #ffffff"
-        src="https://booking.bappnow.com/widget/embed.html?{{page.partnerId}}"></iframe>
+        ></iframe>
 </div>
-<a style="position: fixed; bottom: 0; right: 0; background-color: #ffffff; padding: 10px 15px; font-weight: bold; z-index: 9999;" href="javascript:;" onclick="document.getElementById('BAAP').src='https://booking.bappnow.com/widget/embed.html?{{page.partnerId}}'; 
-document.getElementById('BAAPHOLDER').style.display = 'block'">Book an Appointment</a>
+<a style="position: fixed; bottom: 0; right: 0; background-color: #ffffff; padding: 10px 15px; font-weight: bold; z-index: 9999;" href="javascript:;" onclick="launchDemo()
+">Book an Appointment</a>
